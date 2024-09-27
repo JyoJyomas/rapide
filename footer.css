@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*montserrat font*/
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+
+/*-------FOOTER-------*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer{ 
+    margin-top: auto;
+    background-color: #282729;
+    height: 15vh;
+
+}
+.footer-content{/*all contennt inside footer properties*/
+    display: flex;
+    justify-content: space-around; /*dinagdag ko to*/
+    align-items: center;
+}
+
+.footer-content img{ /*rapide picture properties*/
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.footer-content p{/*text properties*/
+    font-family: "Coda";
+    color: whitesmoke;
+    font-size: 14px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5rem;
+    font-size: 0.8rem;
+    line-height: 25px;
+    padding-top: 1.5rem;
+}
+
+.socials a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: "Coda";
+}
+
+.sms a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: "Coda";
+    cursor: pointer;
+}
+.contact img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.loc{
+    padding-top: 1.2rem;
+}
+.loc h2{
+    font-family: "Coda";
+    font-size: 12px;
+    color: whitesmoke;
+}
+.loc p{
+    font-family: "Coda";
+    font-size: 12px;
+    color: whitesmoke;
+}
