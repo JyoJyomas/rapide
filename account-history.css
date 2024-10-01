@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*montserrat font*/
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+main{
+    min-height: 100vh;
+    margin-bottom: -100px;
+    background-color: #FABC3F;
+}
+
+.account-box{/*Background color of account part*/
+    background-color: #2C2A2A;
+    height: 400px;
+}
+
+.account-icon{/*Account icon container*/
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.account-icon img{ /*Account image*/
+    height: 180px;
+    width: 180px;
+}
+
+.account-name{/*account name container*/
+    font-family: "Montserrat";
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+.account-points{/*Account points container*/
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    font-family: "Montserrat";
+    
+}
+.account-points img{/*Image properties of medal icon*/
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.account-points p{/*account points text*/
+    padding-top: 15px;
+    font-size: 28px;
+}
+
+.transaction{
+    justify-content: center;
+    margin: 1rem;
+    font-size: 24px;
+}
+
+.bokhis{/*Book & History text container*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bokhis li{ /* text's spaces */
+    margin: 0 10px;
+}
+
+.bokhis a{ /* booking and history text properties */
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: "Montserrat";
+    color: black;
+    position: relative;
+}
+.bokhis a::after{/* booking and history underline hover effects */
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+.bokhis a:hover::after{/* booking and history underline hover effect size */
+    width: 100%;
+}
+.underline::after {
+    content: ''; /* Create a pseudo-element */
+    display: block;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background: black; /* Color of the underline */
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the text */
+    left: 0;
+    transition: width 0.3s ease; /* Animation effect */
+}
+
+.underline.active::after {
+    width: 100%; /* Scale to full width when active */
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    height: 180px;
+    width: 850px;
+    background-color: #F9CD75;
+    border-radius: 0.8rem;
+    box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.5); 
+    margin: 15px;
+}
+
+.card-content{
+    display: flex;
+    min-width: 80%;
+}
+
+.card-content img{
+    height: 150px;
+    width: 150px;
+}
+
+.card-info{
+    font-family:"Montserrat";
+    align-items: center;
+    padding-top: 16px;
+}
+
+.card-info p{
+    font-family:"Poppins", sans-serif;
+    font-weight: 200;
+}
+span{
+    font-weight: 300;
+}
+.action p{
+    font-family:"Montserrat";
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
