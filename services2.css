@@ -9,6 +9,20 @@
 .main-content {
     display: flex;
     flex-direction: row;
+    background-image: url("rapide.jpg");
+    height: 100%;
+    width: auto;
+    max-width: 100%; /* Ensures the image does not exceed the viewport width */
+    overflow: hidden; /* Hides any potential overflow */
+    object-fit: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    opacity: rgba(0, 0, 0, 0.5);
+    min-height: calc(100vh - footer-height); /* Replace 'footer-height' with the actual height */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 /*whole services1*/
 
@@ -17,13 +31,13 @@
     display: flex;
 }
 .sidenav { /*all contents of sidebar*/
-    height: 220vh;
     width: auto;
     position: relative;
     background-color: #EBCA85;
     padding-top: 20px;
-    border: 4px solid black;
+    border: 3px solid black;
     box-sizing: border-box;
+    align-items: stretch;
 }
 
 #services { /*SERVICES title above brakes (text properties)*/ 
@@ -55,6 +69,8 @@
     box-sizing: border-box ;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
+    border-left: 0;
+    border-right: 0;
     box-sizing: border-box;
     background-color: #EBB13A;
     margin-top: 5%;
@@ -69,32 +85,40 @@
     background-color: #2C2A2A;
     color: #FEF60B !important; /*problema sa heirarchy kaya naglagay ng important para ito yung sundin*/
 }
-.content img{
-    height: 100vh;
-    width: auto;
-    max-width: 100%; /* Ensures the image does not exceed the viewport width */
-    overflow: hidden; /* Hides any potential overflow */
-    object-fit: cover; /* Optional: crops the image to fit nicely if needed */
-}
+
 /*Sidebar*/
 
 /*Book for services2*/
+.form-popup {
+    display: none;
+    position: relative;
+    left: 150px;
+    z-index: 9999;
+    background-color: #EBB13A;
+    width: 900px;
+    height: 1550px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border-radius: 0.8rem;
+    box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.5);
+  }
+
 .book {
     font-family: "Montserrat";
     width: 100%;
     height: 220vh;
-    background-color: #FABC3F;
     position: relative;
     margin-top: 0px;
 }
+.here{
+    margin: 20px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 800;
+}
 
 .section-one{
-    
-    .book-here{
-        margin: 20px 150px;
-        font-size: 40px;
-        font-weight: 800;
-    }
 
     .s1{
         margin: 15px auto 20px auto;
@@ -103,60 +127,65 @@
         background-color: #F9CD75;
         border-radius: 0.8rem;
         box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.5);
-    
-        .form-group{
-            margin: 20px 0px 0px 0px;
-            height: 130px;
+    } 
 
-            .texts{
-                display: flex;
-                flex-direction: row;
-                margin: 20px 20px 0px 25px;
-        
-                .tall-text{
-                    font-size: 30px;
-                    font-weight: 700;
-                    margin: 20px 20px 0px 0px;
-                    height: 30px;
+    .form-group{
+        margin: 25px auto;
+        margin-top: 5px;
+        height: 130px;
+        width: 850px;
+        height: 130px;
+        background-color: #F9CD75;
+        border-radius: 0.8rem;
+        box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.5);
+    }
 
-                }
-                .small-text{
-                    font-size: 13px;
-                    font-weight: 600;
-                    margin: 35px 20px 0px -10px;
-                    height: 20px;
-                }
-            }
+    .texts{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 20px 0px 25px;
+    }
+
+    .tall-text{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 20px 20px 0px 0px;
+        height: 30px;
+
+    }
+
+    .small-text{
+        font-size: 13px;
+        font-weight: 600;
+        margin: 35px 20px 0px -10px;
+        height: 20px;
+    }
     
-            select{
-                margin: 10px 25px;
-                width: 800px;
-                height: 40px;
-                font-size: 18px;
-                font-family: "montserrat";
-                background-color: #E2BB6B;
-                border-radius: 5px;
-                border-width: 1px 1px 1px 1px;
-                border-style: solid;
-                border-color: rgb(0, 0, 0);
-                cursor: pointer;
-            }
+    select{
+        margin: 10px 25px;
+        width: 800px;
+        height: 40px;
+        font-size: 18px;
+        font-family: "montserrat";
+        background-color: #E2BB6B;
+        border-radius: 5px;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
     
-            option{
-                h1{
-                    font-weight: 700;
-                }
-            }
+    option{
+        h1{
+            font-weight: 700;
         }
-    }   
-
+    } 
 }
 
 .section-two{
-    margin-top: 20px;
-
+margin-bottom: 30px;
     .s2{
-        margin: 0px auto 20px auto;
+        margin: 0px auto 0px auto;
         width: 850px;
         height: 658px;
         background-color: #F9CD75;
@@ -268,12 +297,12 @@
                         cursor: pointer;
                     }
 
-                    button:hover {
+                    .btn3:hover {
                         background: #282729;
                         color: #FEF60B;
                     }
 
-                    button:active{
+                    .active{
                         background: #282729;
                         color: #FEF60B !important;
                     }
@@ -406,16 +435,21 @@
         }
     }
 }
+
+.section-three{
+    margin-top: 30px;
+}
 /*Book for services2*/
 
-.summary-container {
-    margin: 0px auto 20px auto;
+.summary-container { 
+    margin-top: 30px;   
     width: 850px;
     height: 590px;
     background-color: #F9CD75;
     border-radius: 0.8rem;
     box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.5);
     padding-top: 30px;
+    margin-left: 25px;
 }
 
 h2 {
@@ -494,6 +528,10 @@ h2 {
 
 .info-row span {
     color: #4a4a4a;
+}
+
+#percent{
+    font-weight: lighter;
 }
 
 .total {
