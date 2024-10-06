@@ -20,10 +20,11 @@
             <p class="section-title"><strong>Personal Information</strong></p>
             <div class="input-container">
                 <div class="input-box">
-                    <input type="text" class="personal-input-field" placeholder="First Name">
-                    <input type="text" class="personal-input-field" placeholder="Last Name">
-                    <input type="text" class="personal-input-field" placeholder="Phone Number">
-                    <input type="text" class="personal-input-field" placeholder="Address">
+                    <input type="text" class="personal-input-field" placeholder="First Name" required>
+                    <input type="text" class="personal-input-field" placeholder="Last Name" required>
+                    <input type="text" class="personal-input-field" placeholder="Phone Number" required>
+                    <input type="email" class="personal-input-field" placeholder="Email Address" required>
+                    <input type="text" class="personal-input-field" placeholder="Address" required>
                 </div>
             </div>
         </section>
@@ -63,10 +64,10 @@
             </label>
             <!--Verification -->
             <section class="verification-line">
-                <p><strong>Verification</strong></p>
+                <p style ="font-family:Montserrat";><strong>Verification</strong></p>
                 <p class="subtext"><strong>Provide any of the following documents to verify your<br>application.</br></strong></p>
                 <div class="primary-line">
-                    <p><strong>PRIMARY</strong></p>
+                    <p style ="font-family:Montserrat";><strong>PRIMARY</strong></p>
                     <div class="subtext">
                         <p>*OR/RC</p>
                         <p>*Driver's License</p>
@@ -74,7 +75,7 @@
                         <p>*PhilHealth ID</p>
                     </div>
                     <div class="secondary-line">
-                        <p><strong>SECONDARY</strong></p>
+                        <p style ="font-family:Montserrat";><strong>SECONDARY</strong></p>
                         <p class="subtext">*Person Holding the Primary ID</p>
                     </div>
                 </div>
