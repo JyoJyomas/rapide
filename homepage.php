@@ -131,7 +131,7 @@
                             <p id = "inc">4L Oil <br>Oil Filter<br> Sparkplugs <i style="font-size: small;">(regular)</i><br> Tire Rotation</p>
                             <br>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2" style="margin-top: 27px;">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2" style="margin-top: 27px;">Book</button></a>
                             </div>
                         </div>
                         
@@ -141,7 +141,7 @@
                             <p id = "price">₱ 3,100</p>
                             <p id = "inc">6L Oil <br> Oil Filter<br> Engine Flush<br> Break Clean<br> Break Adjust</p>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2">Book</button></a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             <p id = "price">₱ 3,650</p>
                             <p id = "inc">4L Oil <br>Oil Filter<br> Sparkplugs <i style="font-size: small;">(regular)</i> <br>Air Filter <br> Engine Flush</p>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2">Book</button></a>
                             </div>
                         </div>
                         <div class ="fuel">
@@ -169,7 +169,7 @@
                             <p id = "price">₱ 4,600</p>
                             <p id = "inc">6L Oil <br>Oil Filter <br> Engine Flush<br> Air Filter <br>Fuel Filter</p>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2">Book</button></a>
                             </div>
                             
                         </div>
@@ -179,13 +179,13 @@
         </div> 
     </section>  
     
-    <section>
+    <section id="products">
         <h1 id = "ptrn">Available Products On-Site</h1>
         <p id = "ptrn2">In partnership with Petron Products</p>
         <div class = "container">        
             <div class ="ptrn-container">   
                 <div class = "ptrn2-container">
-                    <img class = "ptrnpic" src="petron1.png">
+                    <img class = "ptrnpic" src="photos/petron1.png">
                     <div class = "petron">
                         <p id = "ptrname"> <b>REV-X RX600 SYNTHETIC BLEND Diesel Engine Oil SAE 10W-40 </b> </p>
                     </div>
@@ -193,7 +193,7 @@
             </div>
             <div class ="ptrn-container">   
                 <div class = "ptrn2-container">
-                    <img class = "ptrnpic" src="petron2.png">
+                    <img class = "ptrnpic" src="photos/petron2.png">
                         <div class = "petron">
                             <p id = "ptrname" > <b>PETRON SPRINT 4T SR450 PREMIUM MULTI-GRADE (ENDURO) SAE 20W-50 </b> </p>
                         </div>
@@ -201,7 +201,7 @@
             </div>
             <div class ="ptrn-container">   
                 <div class = "ptrn2-container">
-                <img class = "ptrnpic" src="petron3.png">
+                <img class = "ptrnpic" src="photos/petron3.png">
                     <div class = "petron">
                         <p id = "ptrname" style = "font-size:medium;   padding-bottom: 1px;"> <b >PETRON BLAZE RACING BR400 PREMIUM MULTIGRADE GASOLINE ENGINE OIL (ULTRON TOURING) SAE 15W-40</b> </p>
                     </div>
@@ -210,10 +210,10 @@
         </div>
     </section>
 
-    <img class = "abtbg" src="abtbg.jpg" alt="rapide bg">
+    <img class = "abtbg" src="photos/rapide.jpg" alt="rapide bg">
 
-    <section class = "belowabt">
-        <img  src="miko.png" alt="miko">
+    <section class = "belowabt" id="about">
+        <img  src="photos/miko.png" alt="miko">
         <div class = "advhis">
             <div id = "advantage">
                 <h1 id = "adv">Advantages</h1>
@@ -232,7 +232,7 @@
 <script>
         let currentSlide = 1;
     const totalSlides = 5;  
-    const intervalTime = 5000;
+    const intervalTime = 3000;
 
     function changeSlide() {
         currentSlide++;
