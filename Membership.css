@@ -22,10 +22,12 @@
     box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.5);
     text-align: left;
     height: 1100px;
+    
 
     h1{
         margin-bottom: 30px;
         margin-top: -60px;
+        font-family: "Montserrat";
     }
 }
 
@@ -34,6 +36,7 @@
     font-size: 20px;
     font-weight: 24;
     margin-bottom: 10px;
+    font-family: "Montserrat";
 }
 
 /* Input container to hold all inputs in a single div */
@@ -41,8 +44,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     margin-bottom: 20px;
+    font-family: "Montserrat";
 }
 
 /* personal information input fields */
@@ -57,11 +60,12 @@
     background-color: #272829;
     color: white;
     outline: none;
+    font-family: "Montserrat";
 }
 
 /* create password input fields */
 .input-container .password-input-field {
-    width: 334px;
+    width: 335px;
     height: 40px;
     font-size: 17px;
     padding: 0 25px;
@@ -72,6 +76,7 @@
     color: white;
     outline: none;
     justify-content: center;
+    font-family: "Montserrat";
 }
 /* input text of payment information*/
 .input-payment {
@@ -79,11 +84,12 @@
     margin-top: 10px;
     left: 413px;
     width: 321px;
+    font-family: "Montserrat";
     .subtext {
         /*verification text*/
         font-size: 14px;
         color: #000;
-        line-height: 2.5;       
+        line-height: 2.5;      
     }
 }
 .input-text {
@@ -105,12 +111,14 @@
     font-size: 15px;
     margin-bottom: 5px;
     margin-left: 15px;
+    font-family: "Montserrat";
   }
   
 .terms {
   color: #FF0000;
   font-size: 13px;
   cursor: pointer;
+  
 }
 
 label {
@@ -149,7 +157,7 @@ label {
             font-size: 13px;
             color: #000;
             margin-top: 10px;
-            margin-left: 2px;
+            margin-left: -3px;
             position: static;
             font-style: italic;
             word-spacing: -1px;
@@ -165,7 +173,7 @@ label {
             font-size: 13px;
             color: #000;
             margin-top: 14px;
-            margin-left: 2px;
+            margin-left: -3px;
             position: static;
             text-align: left;
             white-space: nowrap;
@@ -196,6 +204,7 @@ label {
     margin-left: 370px;
     margin-top: 10px;
     font-size: 20px;
+    font-family: "Montserrat";
 }
 /* Membership Perks container*/
 .inner-box {
@@ -222,10 +231,10 @@ label {
     #price {
         /* price text properties */
         font-size: 23px;
-        color: red;
+        color: yellow;
         margin-top: 50px;
         font-weight: bold;
-        text-shadow: -1px -1px 0px black,
+        text-shadow: -1px -1px 5px black,
             /* top-left shadow */ 1px -1px 0px black,
             /* top-right shadow */ -1px 1px 0px black,
             /* bottom-left shadow */ 1px 1px 0px black; /* bottom-right shadow */
