@@ -8,12 +8,11 @@
     <script src="https://kit.fontawesome.com/67eed877b8.js" crossorigin="anonymous"></script>
     <title>Acknowledgement | Rapidé </title>
 </head>
-<body>
+<body style="background-color: #FABC3F">
     <?php 
         include 'navbar.php'
-    ?>
-        <section class="memcon">     
-            <img class="logo-container" src="rapide logo.png" alt="Logo">
+    ?>   
+            <img class="logo-container" src="photos/logo2.png" alt="Logo">
             <div class="centered-box">
                 <p><strong>Thank you for choosing Rapidé. We’re committed to driving your satisfaction, and we look forward to being a part of your automotive journey.</strong></p>
             </div>
@@ -21,12 +20,8 @@
                     <a href = "homepage.php" target="_self"><button class="home-btn">Home</button></a>
                     <a href = "services2.php" target="_self"><button class="services-btn">Services</button></a>
             </div>
-        </Section>
-
     <?php 
         include 'footer.php'
    ?>
 </body>
 </html>
-
-
