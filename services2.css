@@ -9,7 +9,7 @@
 .main-content {
     display: flex;
     flex-direction: row;
-    background-image: url("rapide.jpg");
+    background-image: url("photos/rapides.jpg");
     height: 100%;
     width: auto;
     max-width: 100%; /* Ensures the image does not exceed the viewport width */
@@ -29,6 +29,8 @@
 /*-------SIDE NAV BAR-------*/
 .content{
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 .sidenav { /*all contents of sidebar*/
     width: auto;
@@ -60,6 +62,7 @@
     font-family: "Montserrat";
     font-weight: 800;
     padding-left: 1rem;
+    margin-bottom: 20px;
 }
 .sidenav button:hover { /*hover effect sidenav a text*/
     color: #FEF60B;
@@ -106,9 +109,10 @@
 .book {
     font-family: "Montserrat";
     width: 100%;
-    height: 220vh;
+    height: 2vh;
     position: relative;
     margin-top: 0px;
+    margin-bottom: -100px;
 }
 .here{
     margin: 20px;
@@ -220,6 +224,10 @@ margin-bottom: 30px;
                 border-width: 1px 1px 1px 1px;
                 border-style: solid;
                 border-color: rgb(0, 0, 0);
+            }
+
+            .plate{
+                width: 790px;
             }
         }
 
@@ -596,4 +604,111 @@ h2 {
 .confirm-button:hover {
     background: #282729;
     color: #FEF60B;
+}
+
+/*-------FOOTER-------*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer{ 
+    margin-top: 0px;
+    background-color: #282729;
+    height:11.1vh;
+
+}
+.footer-content{/*all contennt inside footer properties*/
+    display: flex;
+    justify-content: space-around; /*dinagdag ko to*/
+    align-items: center;
+}
+
+.footer-content img{ /*rapide picture properties*/
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.image-logo{
+    margin-top: -5px;
+}
+
+.text-footer{
+    margin-top: 0px;
+}
+
+.footer-content p{/*text properties*/
+    font-family: "Coda";
+    color: whitesmoke;
+    font-size: 14px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5rem;
+    font-size: 0.8rem;
+    line-height: 25px;
+    padding-top: 1.5rem;
+}
+
+.socials{
+    margin-top: -15px;
+}
+
+.socials a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: "Coda";
+    margin-top: 5px;
+    font-size: 13px;
+    gap: 5px;
+}
+
+.sms{
+    margin-top: -13px;
+}
+
+.sms a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    font-family: "Coda";
+    cursor: pointer;
+    margin-top: -5px;
+    font-size: 13px;
+    gap: 5px;
+}
+.contact img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.loc{
+    margin-top: 7px;
+}
+.loc-off{
+    font-family: "Coda";
+    font-size: 12px;
+    color: whitesmoke;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.loc p{
+    font-family: "Coda";
+    font-size: 12px;
+    color: whitesmoke;
 }
