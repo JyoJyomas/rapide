@@ -131,7 +131,7 @@
                             <p id = "inc">4L Oil <br>Oil Filter<br> Sparkplugs <i style="font-size: small;">(regular)</i><br> Tire Rotation</p>
                             <br>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2" style="margin-top: 27px;">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2" style="margin-top: 27px;">Book</button></a>
                             </div>
                         </div>
                         
@@ -141,7 +141,7 @@
                             <p id = "price">₱ 3,100</p>
                             <p id = "inc">6L Oil <br> Oil Filter<br> Engine Flush<br> Break Clean<br> Break Adjust</p>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2">Book</button></a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             <p id = "price">₱ 3,650</p>
                             <p id = "inc">4L Oil <br>Oil Filter<br> Sparkplugs <i style="font-size: small;">(regular)</i> <br>Air Filter <br> Engine Flush</p>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2">Book</button></a>
                             </div>
                         </div>
                         <div class ="fuel">
@@ -169,7 +169,7 @@
                             <p id = "price">₱ 4,600</p>
                             <p id = "inc">6L Oil <br>Oil Filter <br> Engine Flush<br> Air Filter <br>Fuel Filter</p>
                             <div class = "button-container">
-                                <a href="services.php" target = "_blank"><button class="btn2">Book</button></a>
+                                <a href="services2.php" target = "_blank"><button class="btn2">Book</button></a>
                             </div>
                             
                         </div>
@@ -213,7 +213,11 @@
     <img class = "abtbg" src="photos/rapide.jpg" alt="rapide bg">
 
     <section class = "belowabt" id="about">
+<<<<<<< HEAD
         <img  src="photos/miko2.png" alt="miko">
+=======
+        <img  src="photos/miko.png" alt="miko">
+>>>>>>> 2a899d9dc6ae2d7d35b01e620b79e500916f9d90
         <div class = "advhis">
             <div id = "advantage">
                 <h1 id = "adv">Advantages</h1>
@@ -232,7 +236,7 @@
 <script>
         let currentSlide = 1;
     const totalSlides = 5;  
-    const intervalTime = 5000;
+    const intervalTime = 3000;
 
     function changeSlide() {
         currentSlide++;

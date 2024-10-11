@@ -14,11 +14,10 @@
     ?>   
             <img class="logo-container" src="photos/logo2.png" alt="Logo">
             <div class="centered-box">
-                <p><strong>Thank you for choosing Rapidé. We’re committed to driving your satisfaction, and we look forward to being a part of your automotive journey.</strong></p>
+                <p><strong>Thank You for Applying Membership to Rapide! Please wait for 24 hours to validate your membership, thank you.</strong></p>
             </div>
             <div class="hose">
                     <a href = "homepage.php" target="_self"><button class="home-btn">Home</button></a>
-                    <a href = "services2.php" target="_self"><button class="services-btn">Services</button></a>
             </div>
     <?php 
         include 'footer.php'

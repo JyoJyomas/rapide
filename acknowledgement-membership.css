@@ -56,19 +56,3 @@
     background: #FFB22C;
     color: #282729;
 }
-
-.services-btn{
-    font-family: "Poppins",  sans-serif;
-    width: 200px;
-    height: 45px;
-    background: #FFB22C;
-    border: none;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    transition: .3s;
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
-}
-.services-btn:hover{
-    background: #282729;
-    color: #F9CD75;
-}

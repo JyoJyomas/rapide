@@ -9,21 +9,27 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img class="logo" src="photos/logo.png" alt="rapide-logo">
+            <a href="homepage.php"><img class="logo" src="photos/logo.png" alt="rapide-logo"></a>
         </div>
         <nav class="navbar">
             <ul class="navlinks">
                 <li><a href="#products">Products</a></li>
+<<<<<<< HEAD
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Redeem</a></li>
                 <li><a href="#">Membership</a></li>
+=======
+                <li><a href="services2.php">Services</a></li>
+                <li><a href="services2.php">Redeem</a></li>
+                <li><a href="Membership.php">Membership</a></li>
+>>>>>>> 2a899d9dc6ae2d7d35b01e620b79e500916f9d90
                 <li><a href="#about">About Us</a></li>
             </ul>
-            <a href="#" class="user-icon">
+            <a href="account-booking.php" class="user-icon">
                 <i class="fa-regular fa-circle-user fa-2x"></i>
             </a>
         </nav>
-    </header> 
+    </header>
 </body>
 </html>
 

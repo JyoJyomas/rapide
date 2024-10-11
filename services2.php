@@ -227,8 +227,8 @@
                                 <span>| ₱ 8,369.00</span>
                             </div>
                             <div class="button-row">
-                                <button class="home-button">Home</button>
-                                <button class="confirm-button">Confirm&nbsp;Booking</button>
+                                <button type="button" class="home-button">Home</button>
+                                <button type="button" class="confirm-button">Confirm&nbsp;Booking</button>
                             </div>
                         </div>
                     </section>
@@ -436,8 +436,8 @@
                                 <span>| ₱ 8,369.00</span>
                             </div>
                             <div class="button-row">
-                                <button class="home-button">Home</button>
-                                <button class="confirm-button">Confirm&nbsp;Booking</button>
+                                <button type="button" class="home-button">Home</button>
+                                <button type="button" class="confirm-button">Confirm&nbsp;Booking</button>
                             </div>
                         </div>
                     </section>
@@ -644,8 +644,8 @@
                                 <span>| ₱ 8,369.00</span>
                             </div>
                             <div class="button-row">
-                                <button class="home-button">Home</button>
-                                <button class="confirm-button">Confirm&nbsp;Booking</button>
+                                <button type="button" class="home-button">Home</button>
+                                <button type="button" class="confirm-button">Confirm&nbsp;Booking</button>
                             </div>
                         </div>
                     </section>
@@ -849,8 +849,8 @@
                                 <span>| ₱ 8,369.00</span>
                             </div>
                             <div class="button-row">
-                                <button class="home-button">Home</button>
-                                <button class="confirm-button">Confirm&nbsp;Booking</button>
+                                <button type="button" class="home-button">Home</button>
+                                <button type="button" class="confirm-button">Confirm&nbsp;Booking</button>
                             </div>
                         </div>
                     </section>
@@ -1062,8 +1062,8 @@
                                 <span>| ₱ 8,369.00</span>
                             </div>
                             <div class="button-row">
-                                <button class="home-button">Home</button>
-                                <button class="confirm-button">Confirm&nbsp;Booking</button>
+                                <button type="button" class="home-button">Home</button>
+                                <button type="button" class="confirm-button">Confirm&nbsp;Booking</button>
                             </div>
                         </div>
                     </section>
@@ -1273,19 +1273,39 @@
                                 <label>Total Points</label>
                                 <span>| ₱ 8,369.00</span>
                             </div>
-                            <div class="button-row">
-                                <button class="home-button">Home</button>
-                                <button class="confirm-button">Confirm&nbsp;Booking</button>
-                            </div>
+                        <div class="button-row">
+                            <button type="button" class="home-button">Home</button>
+                            <button type="button" class="confirm-button">Confirm&nbsp;Booking</button>
                         </div>
+                    </div>
                     </section>
                 </section>
             </form>
         </div>
     </div>
-    <?php
-       include 'footer.php';
-    ?>
+
+    <footer>
+            <div class="footer-content">
+                <img src="photos/logo.png" alt="rapide-logo" class="image-logo">
+                <p class="text-footer">Any Concerns? Reach us at any of our platform.</p>
+                <div class="contact">
+                    <div class="socials">       
+                        <a href="https://www.facebook.com/RapideAutoServicePH" target="_blank"><img src="photos/facebook.png" alt="facebook">Rapidé</a>
+                        <a href="https://www.instagram.com/rapideautoph" target="_blank"><img src="photos/instagram.png" alt="instagram">Rapidé</a>
+                    </div>
+                    <div class="sms">
+                        <a><img src="photos/gmail.png" alt="Gmail">info@rapide.com.ph</a>
+                        <a><img src="photos/phone.png" alt="Contacts">0966 061 9979(Globe)<br>0919 269 4103(Smart)</a>
+                    </div>
+                </div>
+                <div class="loc">
+                    <h2 class="loc-off">Main Office:</h2>
+                    <p>Monday to Sunday
+                    <br>8:30 A.M - 5:30 P.M</br>
+                    1166 Chino Roces Avenue, Corner Estrella Avenue, Makati</br></p>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
 
@@ -1321,6 +1341,21 @@ function openForm(formId) {
 
     // Show the specific form based on the passed formId
     document.getElementById(formId).style.display = 'block'; // Show the selected form
-}
 
+    // Add event listeners to all "Home" buttons
+    document.querySelectorAll('.home-button').forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'homepage.php'; 
+        });
+    });
+
+    document.querySelectorAll('.confirm-button').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        window.location.href = 'Acknowledgement.php'; 
+        alert('Booking confirmed!');
+    });
+});
+}
 </script>
