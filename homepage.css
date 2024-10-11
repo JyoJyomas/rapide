@@ -8,7 +8,8 @@
   html, body {
       margin: 0;
       padding: 0;
-      overflow-x: hidden
+      overflow-x: hidden;
+      scroll-behavior:smooth;
   }
   
   #exp{/* slider header text properties */
@@ -478,7 +479,7 @@
 }
 
 .abtbg { /* rapide bg cover */
-width: 100%;
+  width: 100%;
   margin-top: 50px;
   height: 100%;
   object-fit: cover;

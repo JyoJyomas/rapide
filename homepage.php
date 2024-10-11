@@ -179,13 +179,13 @@
         </div> 
     </section>  
     
-    <section>
+    <section id="products">
         <h1 id = "ptrn">Available Products On-Site</h1>
         <p id = "ptrn2">In partnership with Petron Products</p>
         <div class = "container">        
             <div class ="ptrn-container">   
                 <div class = "ptrn2-container">
-                    <img class = "ptrnpic" src="petron1.png">
+                    <img class = "ptrnpic" src="photos/petron1.png">
                     <div class = "petron">
                         <p id = "ptrname"> <b>REV-X RX600 SYNTHETIC BLEND Diesel Engine Oil SAE 10W-40 </b> </p>
                     </div>
@@ -193,7 +193,7 @@
             </div>
             <div class ="ptrn-container">   
                 <div class = "ptrn2-container">
-                    <img class = "ptrnpic" src="petron2.png">
+                    <img class = "ptrnpic" src="photos/petron2.png">
                         <div class = "petron">
                             <p id = "ptrname" > <b>PETRON SPRINT 4T SR450 PREMIUM MULTI-GRADE (ENDURO) SAE 20W-50 </b> </p>
                         </div>
@@ -201,7 +201,7 @@
             </div>
             <div class ="ptrn-container">   
                 <div class = "ptrn2-container">
-                <img class = "ptrnpic" src="petron3.png">
+                <img class = "ptrnpic" src="photos/petron3.png">
                     <div class = "petron">
                         <p id = "ptrname" style = "font-size:medium;   padding-bottom: 1px;"> <b >PETRON BLAZE RACING BR400 PREMIUM MULTIGRADE GASOLINE ENGINE OIL (ULTRON TOURING) SAE 15W-40</b> </p>
                     </div>
@@ -210,10 +210,10 @@
         </div>
     </section>
 
-    <img class = "abtbg" src="abtbg.jpg" alt="rapide bg">
+    <img class = "abtbg" src="photos/rapide.jpg" alt="rapide bg">
 
-    <section class = "belowabt">
-        <img  src="miko.png" alt="miko">
+    <section class = "belowabt" id="about">
+        <img  src="photos/miko2.png" alt="miko">
         <div class = "advhis">
             <div id = "advantage">
                 <h1 id = "adv">Advantages</h1>
